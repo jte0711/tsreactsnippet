@@ -9,6 +9,7 @@
     "email": "james.dev2195@gmail.com",
     "url": "https://github.com/jte0711"
   },
+  "repository": "https://github.com/jte0711/tsreactsnippet",
   "engines": {
     "vscode": "^1.87.0"
   },
