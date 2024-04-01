@@ -1,0 +1,48 @@
+{
+  "Create React Context": {
+    "prefix": ["rctx"],
+    "body": [
+      "import { ReactNode, createContext, useContext } from 'react';",
+      "",
+      "export interface ${TM_FILENAME_BASE}ContextType {",
+      "   abc: string;",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE}Context = createContext<${TM_FILENAME_BASE}ContextType | null>(null);",
+      "",
+      "export const ${TM_FILENAME_BASE}Provider = ({ children }: { children: ReactNode }) => {",
+      "   return (",
+      "   <${TM_FILENAME_BASE}Context.Provider value={{ abc: 'test' }}>",
+      "       {children}",
+      "   </${TM_FILENAME_BASE}Context.Provider>",
+      "   );",
+      "};",
+      "",
+      "const use${TM_FILENAME_BASE} = () => useContext(${TM_FILENAME_BASE}Context);",
+      "export default use${TM_FILENAME_BASE};"
+    ],
+    "description": "Create React Context, with Interface, createContext, Provider, and useContext"
+  },
+  "Create React Arrow Function": {
+    "prefix": ["raf"],
+    "body": ["const ${0:functionName} = () => {};"],
+    "description": "Create a simple react arrow function component"
+  },
+  "Create New TSX Component": {
+    "prefix": ["rafcet"],
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${TM_FILENAME_BASE}Props {",
+      "   abc: string;",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE} = ({ abc }: ${TM_FILENAME_BASE}Props) => {",
+      "   return <div>${TM_FILENAME_BASE}</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Create a new .tsx file, with a simple arrow function component, default, and interface for props"
+  }
+}

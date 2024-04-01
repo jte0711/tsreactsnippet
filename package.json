@@ -1,0 +1,26 @@
+{
+  "name": "tsreactsnippet",
+  "displayName": "TSReactSnippet",
+  "description": "A simple snippets that you will use when building new project.",
+  "version": "0.0.1",
+  "publisher": "jamestedy",
+  "author": {
+    "name": "James Tedy",
+    "email": "james.dev2195@gmail.com",
+    "url": "https://github.com/jte0711"
+  },
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
